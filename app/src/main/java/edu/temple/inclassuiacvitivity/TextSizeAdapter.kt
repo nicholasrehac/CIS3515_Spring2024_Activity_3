@@ -21,7 +21,9 @@ class TextSizeAdapter(private val context: Context, private val sizes: Array<Int
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        //
+        var textView = TextView(context)
+        textView.text = sizes[position].toString()
+        return textView
     }
 
     override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup?): View {
