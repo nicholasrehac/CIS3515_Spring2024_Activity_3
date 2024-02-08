@@ -23,6 +23,7 @@ class TextSizeAdapter(private val context: Context, private val sizes: Array<Int
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         var textView = TextView(context)
         textView.text = sizes[position].toString()
+        textView.textSize = 25.0f
         return textView
     }
 
